@@ -1,0 +1,17 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node & build
+node_modules/
+dist/
+build/
+.next/
+*.log
+
+# Hardhat artifacts
+contracts/animalcare-hardhat/artifacts/
+contracts/animalcare-hardhat/cache/
+contracts/animalcare-hardhat/deployments/localhost/
+contracts/animalcare-hardhat/deployments/sepolia/
