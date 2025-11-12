@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "DM Sans", "Inter", "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: theme("colors.mist");
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-mist via-white to-porcelain text-graphite;
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-3xl border border-cloud/80 bg-white/90 backdrop-blur-xl shadow-glow transition-all;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-iris-500 via-blush-500 to-amber-400 px-6 py-3 font-semibold text-white shadow-glow transition-all hover:shadow-glow-lg hover:-translate-y-0.5 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-cloud bg-white px-6 py-3 font-semibold text-smoke transition-all hover:border-iris-300 hover:bg-iris-50/70 hover:-translate-y-0.5 active:scale-95 disabled:opacity-50 disabled:hover:translate-y-0;
+  }
+
+  .input-field {
+    @apply w-full rounded-2xl border border-cloud bg-white px-5 py-3 text-graphite placeholder:text-smoke/70 transition-all focus:border-iris-400 focus:outline-none focus:ring-2 focus:ring-iris-200 focus:bg-white;
+  }
+}
+
+@layer base {
+  ::selection {
+    background: rgba(104, 77, 190, 0.2);
+    color: theme("colors.graphite");
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .nebula-border {
+    @apply border border-transparent bg-gradient-to-r from-white via-porcelain to-white;
+    background-origin: border-box;
+    box-shadow: 0 0 0 1px rgba(229, 232, 240, 0.9);
+  }
+}
+
