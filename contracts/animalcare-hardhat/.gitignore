@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Public chain deployments (may contain from-address)
+deployments/sepolia/
+
+# Usual artifacts
+node_modules/
+cache/
+artifacts/
+typechain/
+coverage/
+*.log
+
