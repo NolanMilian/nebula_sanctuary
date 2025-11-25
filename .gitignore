@@ -15,3 +15,6 @@ contracts/animalcare-hardhat/artifacts/
 contracts/animalcare-hardhat/cache/
 contracts/animalcare-hardhat/deployments/localhost/
 contracts/animalcare-hardhat/deployments/sepolia/
+
+# macOS
+.DS_Store
